@@ -94,24 +94,25 @@ a{
     background-color: #ffffff !important;
     box-shadow: 0 0 10px #e6e6e6 !important;
 }
-.categories{
+.categories,.categories-mobile{
     padding: 2px 2px 2px 2px !important;
     margin-top: 20px !important;
     background-color: #ffffff !important;
     box-shadow: 0 0 10px #e6e6e6 !important;
-}
-.categories h3{
+},]
+.categories h3,.categories-mobile h3{
     text-align: center;
 }
-.categories ul {
+.categories ul , .categories-mobile ul{
     text-align: center;
     padding-left: unset;
 }
-.categories ul li {
+.categories ul li, .categories-mobile ul li{
     list-style-type: none;
     font-size: 18px;
     padding: 2px 2px 2px 2px;
 }
+
 .id-2-content-2 ul li{
     padding: 10px 10px 10px 10px;
 }
@@ -320,9 +321,16 @@ footer{
     border-radius: 28px;
 }
 @media only screen and (max-width: 600px){
-    .icon-bar{
+    .icon-bar,.categories{
        display:none;  
        }
+    
+}
+@media only screen and (min-width: 600px){
+      .categories-mobile{
+       display:none;  
+       }
+    
 }
 body{
      width:100%;
