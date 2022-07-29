@@ -319,3 +319,8 @@ footer{
     border: none;
     border-radius: 28px;
 }
+@media only screen and (max-width: 600px){
+    .icon-bar{
+       display:none;  
+       }
+}
